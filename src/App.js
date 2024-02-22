@@ -3,15 +3,24 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Add from './components/Add';
 import Login from './components/Login';
+import { Route,Routes } from 'react-router-dom';
+
+import View from './components/View';
 
 function App() {
   return (
     <div className="App">
+    
       <Navbar/>
-      <Add/>
+      {/* <Add/>
       <Login/>
+      <Veiw/> */}
 
-      
+      <Routes>
+        <Route path="/Add" element={<Add Student/>}></Route>
+        <Route path="/Login" element={<Login/>}></Route>
+        <Route path="/View" element={<View/>}></Route>
+        </Routes> 
     </div>
   );
 }
