@@ -17,7 +17,7 @@ function App() {
       <Veiw/> */}
 
       <Routes>
-        <Route path="/Add" element={<Add Student/>}></Route>
+        <Route path="/Add" element={<Add method="post" data={{id: '0', name: '', age:'', department: ''}}/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
         <Route path="/View" element={<View/>}></Route>
         </Routes> 
